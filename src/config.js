@@ -6,27 +6,49 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "NeiTheAdventurerTurtle";
+const description = "To rescue Turtleland, this turtle is the only one with the foresight required. To show your support for our hero's efforts to preserve our environment, culture, and anything else you are able to discern with your own keen senses, consider purchasing, minting, or otherwise disseminating his narrative. Let's learn from each other. I have faith in his abilities.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 500,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Sky" },
+      { name: "Foreground" },
+      { name: "Pure Backgrouns" },
+      { name: "Ground" },
+      { name: "Right Trees" },
+      { name: "Left Trees" },
+      { name: "Shadow" },
+      { name: "Right Front Leg" },
+      { name: "Left Front Leg" },
+      { name: "Left Back Leg" },
+      { name: "Right Back Leg" },
+      { name: "Complete Hull" },
+      { name: "T1" },
+      { name: "T2" },
+      { name: "T3" },
+      { name: "T4" },
+      { name: "T5" },
+      { name: "T6" },
+      { name: "T7" },
+      { name: "T8" },
+      { name: "Tail" },
+      { name: "Lower Back" },
+      { name: "Head" },
+      { name: "Nails" },
+      { name: "Eyes" },
+      { name: "Eyes Emotion" },
+      { name: "Mouth" },
+      { name: "Hats" },
+      { name: "Garden" },
     ],
   },
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
@@ -37,21 +59,21 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://www.origincreationagr.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = "YOUR API KEY HERE";
+const AUTH = "43004f52-7257-4261-886e-da2009bd426b";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'NeiTheAdventurerTurtle';
+const CONTRACT_SYMBOL = 'NTA';
 const CONTRACT_TYPE = 'erc721';
-const MINT_TO_ADDRESS = 'YOUR WALLET ADDRESS HERE';
+const MINT_TO_ADDRESS = '0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8';
 const CHAIN = 'rinkeby';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8"; // Address that will receive the royalty
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
@@ -81,10 +103,10 @@ try {
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://www.origincreationagr.xyz",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8",
       share: 100,
     },
   ],
