@@ -64,9 +64,9 @@ const extraMetadata = {
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = "43004f52-7257-4261-886e-da2009bd426b";
+const AUTH = "fa987ff4-96ea-4036-824d-9d785957cfc0";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'NeiTheAdventurerTurtle';
+const CONTRACT_NAME = 'NeiTheAdventurerTurtleLMTTD';
 const CONTRACT_SYMBOL = 'NTA';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8';
