@@ -6,44 +6,21 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "NeiTheAdventurerTurtleLMTD";
-const description = "To rescue Turtleland, this turtle is the only one with the foresight required. To show your support for our hero's efforts to preserve our environment, culture, and anything else you are able to discern with your own keen senses, consider purchasing, minting, or otherwise disseminating his narrative. Let's learn from each other. I have faith in his abilities. Aditional 9500 itens to be minted in our website.";
+const namePrefix = "PixelLandscapesAGR";
+const description = "This is a collection that shows my best landscape pictures composed for your enjoyment";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 500,
+    growEditionSizeTo: 1500,
     layersOrder: [
       { name: "Sky" },
       { name: "Foreground" },
-      { name: "Pure Backgrouns" },
       { name: "Ground" },
       { name: "Right Trees" },
       { name: "Left Trees" },
-      { name: "Shadow" },
-      { name: "Right Front Leg" },
-      { name: "Left Front Leg" },
-      { name: "Left Back Leg" },
-      { name: "Right Back Leg" },
-      { name: "Complete Hull" },
-      { name: "T1" },
-      { name: "T2" },
-      { name: "T3" },
-      { name: "T4" },
-      { name: "T5" },
-      { name: "T6" },
-      { name: "T7" },
-      { name: "T8" },
-      { name: "Tail" },
-      { name: "Lower Back" },
-      { name: "Head" },
-      { name: "Nails" },
-      { name: "Eyes" },
-      { name: "Eyes Emotion" },
-      { name: "Mouth" },
-      { name: "Hats" },
-      { name: "Garden" },
+      { name: "Pure Backgrouns" },
     ],
   },
 ];
@@ -53,8 +30,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1200,
+  height: 1200,
   smoothing: false,
 };
 
@@ -66,8 +43,8 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = "fa987ff4-96ea-4036-824d-9d785957cfc0";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'NeiTheAdventurerTurtleLMTTD';
-const CONTRACT_SYMBOL = 'NTA';
+const CONTRACT_NAME = 'PixelLandscapesAGR';
+const CONTRACT_SYMBOL = 'PL';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8';
 const CHAIN = 'Polygon';
@@ -75,7 +52,7 @@ const METADATA_UPDATABLE = true; // set to false if you don't want to allow meta
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8"; // Address that will receive the royalty
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x86165E08444BeAe6e2052e452F2f82493a936e4F"; // If you want to manually include it
+let CONTRACT_ADDRESS = ""; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = "Unknown"; // Replace with what you want the generic titles to say.
