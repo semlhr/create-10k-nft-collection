@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "PixelLandscapesAGR";
-const description = "This is a collection that shows my best landscape pictures composed for your enjoyment";
+const description = "This is a collection that shows my landscape pictures composed for your enjoyment";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -46,11 +46,11 @@ const LIMIT = 2; // Your API key rate limit
 const CONTRACT_NAME = 'PixelLandscapesAGR';
 const CONTRACT_SYMBOL = 'PL';
 const CONTRACT_TYPE = 'erc721';
-const MINT_TO_ADDRESS = '0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8';
+const MINT_TO_ADDRESS = '0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8';
 const CHAIN = 'Polygon';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8"; // Address that will receive the royalty
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = ""; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
@@ -110,7 +110,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 22 / 128,
+  ratio: 19 / 128,
 };
 
 const background = {
