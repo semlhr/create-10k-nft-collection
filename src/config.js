@@ -6,21 +6,22 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "PixelLandscapesAGR";
-const description = "This is a collection that shows my landscape pictures composed for your enjoyment";
+const namePrefix = "A World inSide a Vase";
+const description = "This is a collection that shows my garden's stars shared here for your enjoyment";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 1500,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Sky" },
       { name: "Foreground" },
       { name: "Ground" },
-      { name: "Right Trees" },
-      { name: "Left Trees" },
       { name: "Pure Backgrouns" },
+      { name: "Table&Chair" },
+      { name: "Shadow" },
+      { name: "Vase" },
     ],
   },
 ];
@@ -30,8 +31,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 1200,
-  height: 1200,
+  width: 800,
+  height: 800,
   smoothing: false,
 };
 
@@ -83,7 +84,7 @@ const solanaMetadata = {
   external_url: "https://www.origincreationagr.xyz",
   creators: [
     {
-      address: "0x9F221d9Ca06cB8e8F1B88689ecfe462579fFA2D8",
+      address: "",
       share: 100,
     },
   ],
