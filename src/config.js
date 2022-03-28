@@ -13,7 +13,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10000,
+    growEditionSizeTo: 3000,
     layersOrder: [
       { name: "Wall" },
       { name: "Table&Chair" },
@@ -42,8 +42,8 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = "fa987ff4-96ea-4036-824d-9d785957cfc0";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'A World inSide a Vase';
-const CONTRACT_SYMBOL = 'WiV';
+const CONTRACT_NAME = 'One Vase';
+const CONTRACT_SYMBOL = 'VSE';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8';
 const CHAIN = 'Polygon';
