@@ -6,7 +6,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "A World inSide a Vase";
+const namePrefix = "One Vase";
 const description = "This is a collection that shows my garden's stars shared here for your enjoyment";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -15,13 +15,11 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 10000,
     layersOrder: [
-      { name: "Sky" },
-      { name: "Foreground" },
-      { name: "Ground" },
-      { name: "Pure Backgrouns" },
+      { name: "Wall" },
       { name: "Table&Chair" },
       { name: "Shadow" },
       { name: "Vase" },
+      { name: "Pure Backgrouns" },
     ],
   },
 ];
@@ -44,8 +42,8 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = "fa987ff4-96ea-4036-824d-9d785957cfc0";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'PixelLandscapesAGR';
-const CONTRACT_SYMBOL = 'PL';
+const CONTRACT_NAME = 'A World inSide a Vase';
+const CONTRACT_SYMBOL = 'WiV';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8';
 const CHAIN = 'Polygon';
