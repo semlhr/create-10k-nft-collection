@@ -6,8 +6,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "A World inSide a Vase";
-const description = "This is a collection that shows my garden's stars shared here for your enjoyment";
+const namePrefix = "A World Seen by a Vase";
+const description = "A simple vision of the world.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -44,8 +44,8 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = "fa987ff4-96ea-4036-824d-9d785957cfc0";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'PixelLandscapesAGR';
-const CONTRACT_SYMBOL = 'PL';
+const CONTRACT_NAME = 'A World Seen by a Vase';
+const CONTRACT_SYMBOL = 'SbV';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8';
 const CHAIN = 'Polygon';
@@ -53,7 +53,7 @@ const METADATA_UPDATABLE = true; // set to false if you don't want to allow meta
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8"; // Address that will receive the royalty
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0xEC6bd9573EC565dd11d24BD85D702786F7e2aB33"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x860EcBe68961B20db88Ab6759Dc1b1B01b00F0E6"; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = "Unknown"; // Replace with what you want the generic titles to say.
