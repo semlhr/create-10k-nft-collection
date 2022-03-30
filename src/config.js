@@ -6,13 +6,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-<<<<<<< HEAD
 const namePrefix = "From My Window";
 const description = "This is a compilation I put together while I was depressed, and I hope it brings joy to someone else.";
-=======
-const namePrefix = "One Vase";
-const description = "This is a collection that shows my garden's stars shared here for your enjoyment";
->>>>>>> 5ee3c82bdbacc1ed41096cfc42c28cc98dcd7eee
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -53,13 +48,8 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = "5232be5d-e350-424c-858e-2a194cbfa015";
 const LIMIT = 2; // Your API key rate limit
-<<<<<<< HEAD
 const CONTRACT_NAME = 'From My Window';
 const CONTRACT_SYMBOL = 'FW';
-=======
-const CONTRACT_NAME = 'One Vase';
-const CONTRACT_SYMBOL = 'VSE';
->>>>>>> 5ee3c82bdbacc1ed41096cfc42c28cc98dcd7eee
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8';
 const CHAIN = 'Polygon';
@@ -69,13 +59,13 @@ const ROYALTY_ADDRESS = "0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8"; // Address
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = ""; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
-const GENERIC_TITLE = "Unknown"; // Replace with what you want the generic titles to say.
-const GENERIC_DESCRIPTION = "Unknown"; // Replace with what you want the generic descriptions to say.
+const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC_TITLE = "From My Window"; // Replace with what you want the generic titles to say.
+const GENERIC_DESCRIPTION = "This is a compilation I put together while I felt something you maybe feel sometimes too.."; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = [
-  "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh",
+  "https://ipfs.io/ipfs/bafybeiaw7h3tlhxyql4ohekgbpwvlqdkkrqrccxysyuzimctohup5twyci",
 ]; // Replace with your generic image(s). If multiple, separate with a comma.
-const REVEAL_PROMPT = true; // Set to false if you want to disable the prompt to confirm each reveal.
+const REVEAL_PROMPT = false; // Set to false if you want to disable the prompt to confirm each reveal.
 const INTERVAL = 900000; // Milliseconds. This is the interval for it to check for sales and reveal the NFT. 900000 = 15 minutes.
 
 // Automatically set contract address if deployed using the deployContract.js script
