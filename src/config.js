@@ -6,22 +6,26 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "A World Seen by a Vase";
-const description = "A simple vision of the world.";
+const namePrefix = "From My Window";
+const description = "This is a compilation I put together while I was depressed, and I hope it brings joy to someone else.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10000,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Sky" },
       { name: "Foreground" },
       { name: "Ground" },
-      { name: "Pure Backgrouns" },
-      { name: "Table&Chair" },
-      { name: "Shadow" },
+      { name: "Left Trees" },
+      { name: "Right Trees" },
+      { name: "Wall W" },
+      { name: "Window" },
+      { name: "Table Chair" },
       { name: "Vase" },
+      { name: "Shadow" },
+      { name: "Color Filter" },
     ],
   },
 ];
@@ -31,8 +35,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 800,
-  height: 800,
+  width: 2000,
+  height: 2000,
   smoothing: false,
 };
 
@@ -42,10 +46,10 @@ const extraMetadata = {
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = "fa987ff4-96ea-4036-824d-9d785957cfc0";
+const AUTH = "5232be5d-e350-424c-858e-2a194cbfa015";
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'A World Seen by a Vase';
-const CONTRACT_SYMBOL = 'SbV';
+const CONTRACT_NAME = 'From My Window';
+const CONTRACT_SYMBOL = 'FW';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = '0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8';
 const CHAIN = 'Polygon';
@@ -53,7 +57,7 @@ const METADATA_UPDATABLE = true; // set to false if you don't want to allow meta
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x9f221d9ca06cb8e8f1b88689ecfe462579ffa2d8"; // Address that will receive the royalty
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x860EcBe68961B20db88Ab6759Dc1b1B01b00F0E6"; // If you want to manually include it
+let CONTRACT_ADDRESS = ""; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = "Unknown"; // Replace with what you want the generic titles to say.
@@ -79,7 +83,7 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "PL",
+  symbol: "FW",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.origincreationagr.xyz",
   creators: [
@@ -177,4 +181,4 @@ module.exports = {
   METADATA_UPDATABLE,
   ROYALTY_SHARE,
   ROYALTY_ADDRESS,
-};
+}
